@@ -114,7 +114,7 @@ export default class Parser {
       return
     }
 
-    this.uri += this.prepend() + 'page=' + this.builder.pageValue
+    this.uri += this.prepend() + 'page[number]=' + this.builder.pageValue
   }
 
   limit () {
@@ -122,7 +122,7 @@ export default class Parser {
       return
     }
 
-    this.uri += this.prepend() + 'limit=' + this.builder.limitValue
+    this.uri += this.prepend() + 'page[size]=' + this.builder.limitValue
   }
 
   payload () {
